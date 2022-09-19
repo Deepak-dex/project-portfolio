@@ -1,0 +1,118 @@
+.header{
+    padding: 3em;
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__heroContent{
+    flex-basis: 43%;
+}
+
+.header__heroContent__heading{
+    font-size: 4rem;
+    text-align: left;
+    color: #130f49;
+    line-height: 1.2em;
+    margin-bottom: 0em;
+    letter-spacing: -2px;
+}
+
+.header__heroContent__heading>span{
+    color: #34a1cd;
+}
+
+.header__heroContent__description{
+    color: #55527c;
+    text-align: left;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.header__heroContent__newsletter{
+    display: flex;
+    width: max-content;
+    padding: .5em;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    background-color: #f7f6fb;
+}
+
+.header__heroContent__newsletter>input{
+    border: 1px none black;
+    background: transparent;
+    outline: none;
+    width: 80%;
+    margin-left: 1em;
+}
+
+.header__heroContent__newsletter>input::placeholder{
+    color: #b3acc4;
+}
+
+.header__heroContent__newsletter>span{
+    padding: 1em 1.7em;
+    color: white;
+    font-size: 1rem;
+    background-color: #130f49;
+    border-radius: .7rem;
+}
+
+.header__heroContent__updates{
+    color: rgb(76, 73, 92);
+    text-align: left;
+}
+
+/* image section */
+.header__HeroShape{
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    z-index: -100;
+}
+
+.header__heroImgContainer{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.header__heroImgContainer>div{
+    background-color: #ccf0ff;
+    border-radius: 50%;
+    border-top-right-radius:0em ;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    width: min(100%,30em);
+    margin: 0em 1em;
+    padding-top: 3em;
+}
+
+.header__heroImgContainer>div>img{
+    width: 100%;
+}
+
+.header__heroImgContainer__HeroDots{
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    height: 6em;
+    z-index: 100;
+}
+
+@media (max-width:1100px) {
+    .header{
+        flex-direction: column;
+        grid-gap: 3em;
+        align-items: center;
+        padding: 1em;
+        width: 90%;
+    }
+
+    .header__heroContent__description{
+        max-width: 60ch;
+    }
+}
